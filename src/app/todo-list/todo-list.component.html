@@ -1,0 +1,9 @@
+<div>
+    <p>My Task Today</p>
+    <ul>
+        <li *ngFor="let todo of todolist">{{ todo }}</li>
+    </ul>
+    <b>Task:</b>
+    <input type="text" [(ngModel)]="newtodo">
+    <button (click)="addTask()">Add</button>
+</div>
