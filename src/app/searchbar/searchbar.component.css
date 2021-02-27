@@ -1,0 +1,22 @@
+button {
+    background-color:  rgb(255, 115, 0);
+    color: white;
+    border: none;
+}
+
+div{
+    background-color: white;
+    padding: 0.5rem;
+    width: 100%;
+    align-items:stretch;
+}
+
+input{
+    width:50vw;
+    border: none;
+}
+
+.item {
+    padding: 0.4rem;
+    margin: 0.2rem;
+}
