@@ -1,6 +1,0 @@
-<!-- <p *ngFor="let item of items">
-    <span *ngIf="item%2===0" class="number-even">{{ item }}</span>
-    <span *ngIf="item%2===1" class="number-odd">{{ item }}</span>
-</p> -->
-
-<p *ngFor="let item of items" [ngClass]="{'number-even': item%2===0, 'number-odd': item%2!==0}">{{ item }}</p>
