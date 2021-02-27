@@ -1,7 +1,10 @@
 <div>
     <p>My Task Today</p>
     <ul>
-        <li *ngFor="let todo of todolist">{{ todo }}</li>
+        <li *ngFor="let todo of todolist">
+            {{ todo }}
+            <button (click)="delTask(todo)">x</button>
+        </li>
     </ul>
     <b>Task:</b>
     <input type="text" [(ngModel)]="newtodo">

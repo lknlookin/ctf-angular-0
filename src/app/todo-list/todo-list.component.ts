@@ -16,4 +16,8 @@ export class ToDoListComponent {
     addTask(){
         this.todolist.push(this.newtodo);
     }
+
+    delTask(todo:string){
+        this.todolist.splice(this.todolist.indexOf(todo,0),1);
+    }
 }
