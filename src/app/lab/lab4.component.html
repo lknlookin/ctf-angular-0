@@ -1,0 +1,19 @@
+<h2>lab4</h2>
+<ul>
+    <li *ngFor="let item of items">
+        <!-- <p>a {{item}}</p> -->
+        <p *ngIf="item%2===0" class="number-even">{{ item }}</p>
+        <p *ngIf="item%2===1" class="number-odd">{{ item }}</p>
+    </li>
+</ul>
+<!-- <p *ngFor="let item of items">
+    <span *ngIf="item%2===0" class="number-even">{{ item }} </span>
+    <span *ngIf="item%2===1" class="number-odd">{{ item }} </span>
+</p> -->
+
+<!-- <ul>
+    <li *ngFor="let item of items">
+      <span *ngIf="item !== 5" class="number-even">{{ item }}</span>
+      <b *ngIf="item === 5">{{ item }}</b>
+    </li>
+</ul> -->
